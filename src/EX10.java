@@ -11,17 +11,21 @@ public class EX10 {
             numeros[i] = sc.nextDouble();
         }
         double media = 0, soma = 0;
+        int qntd = 0;
 
         for (int i = 0; i < numeros.length; i++) {
             soma += numeros[i];
-            media = soma / numeros.length;
         }
+        media = soma / numeros.length;
+
         System.out.printf("A média é: %.2f \nE os números acima de média foram: ", media);
 
         for (int i = 0; i < numeros.length; i++) {
             if (numeros[i] > media){
                 System.out.println(numeros[i]);
+                qntd++;
             }
         }
+        System.out.println("A quantidade de números acima da média foi: " + qntd);
     }
 }
