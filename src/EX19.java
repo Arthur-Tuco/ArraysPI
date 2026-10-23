@@ -7,16 +7,27 @@ public class EX19{
     int[] num1 = new int[10];
     int[] num2 = new int[10];
 
-    for(i = 0; i < num1.length; i++){
+    for(int i = 0; i < num1.length; i++){
       System.out.println("Digite o " + (i + 1) + "º número para o primeiro vetor: ");
-      num1[i] = sc.nextInt;
+      num1[i] = sc.nextInt();
     }
-    for(i = 0; i < num2.length; i++){
+    for(int i = 0; i < num2.length; i++){
       System.out.println("Digite o " + (i + 1) + "º número para o segundo vetor: ");
-      num2[i] = sc.nextInt;
+      num2[i] = sc.nextInt();
     }
-    if(num1[] == num2[]){
-      
+    boolean iguais = true;
+
+    for (int i = 0; i < num1.length; i++){
+      if(num1[i] != num2[i]){
+        iguais = false;
+        break;
+      }
+    }
+    if(iguais){
+      System.out.println("Os vetores são iguais (posição e valor)");
+    }
+    else{
+      System.out.println("Os vetores não são iguais.");
+    }
     }
   }
-}
