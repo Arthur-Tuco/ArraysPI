@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class EX19{
-  public static void(String[] args){
+  public static void main(String[] args){
     Scanner sc = new Scanner(System.in);
 
     int[] num1 = new int[10];
@@ -15,6 +15,8 @@ public class EX19{
       System.out.println("Digite o " + (i + 1) + "º número para o segundo vetor: ");
       num2[i] = sc.nextInt;
     }
-    
+    if(num1[] == num2[]){
+      
+    }
   }
 }
