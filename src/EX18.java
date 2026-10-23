@@ -7,12 +7,12 @@ public class EX18{
         int[] numeros = new int[10];
 
         for (int i = 0; i < numeros.length; i++){
-            System.out.println("Digite o " + (i + 1) + "º número: ")
+            System.out.println("Digite o " + (i + 1) + "º número: ");
             numeros[i] = sc.nextInt();
         }
         for (int i = 0; i < numeros.length - 1; i++){
             for (int j = 0; j < numeros.length - 1 - i; j++){
-                if (numeros[j] > numeros[j + i]{
+                if (numeros[j] > numeros[j + i]){
                     int aux = numeros[j];
                     numeros[j] = numeros[j + 1];
                     numeros[j + 1] = aux;
